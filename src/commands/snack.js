@@ -25,4 +25,6 @@ const SnackCommand = new SlashCommandBuilder()
       )
   )
 
+console.log(SnackCommand.toJSON())
+
 export default SnackCommand.toJSON()

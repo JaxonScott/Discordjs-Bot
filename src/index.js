@@ -37,7 +37,9 @@ client.on('interactionCreate', (interaction) => {
   if (interaction.isChatInputCommand()) {
     if (interaction.commandName === 'users')
       interaction.reply({
-        content: `${interaction.addUserOptions.getString('user')}`,
+        content: ` ${interaction.options.getUser(
+          'user'
+        )} aint you NATHANIEL B?`,
       })
   }
 })
